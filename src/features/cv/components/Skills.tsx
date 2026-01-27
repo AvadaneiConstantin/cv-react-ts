@@ -159,7 +159,7 @@ export const Skills = () => {
                     <h6 className="text-slate-300 font-semibold text-xs mb-0.5">
                       {skill.title}
                     </h6>
-                    <p className="text-[10px] text-slate-500 leading-tight">
+                    <p className="text-[11px] text-slate-500 leading-tight">
                       {skill.desc}
                     </p>
                   </div>
@@ -173,7 +173,7 @@ export const Skills = () => {
       {/* Soft Skills - Separate Section */}
       <section>
         <SectionTitle icon={Heart} title="Soft Skills" color="pink" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-3 gap-3">
           {skills.softSkills.map((skill: any, i: number) => {
             const iconMap: Record<string, any> = {
               purple: Search,
@@ -196,10 +196,10 @@ export const Skills = () => {
                   <Icon className="w-3.5 h-3.5" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h6 className="text-slate-200 font-bold text-[12px] mb-0.5 tracking-tight leading-none">
+                  <h6 className="text-slate-200 font-bold text-[12px] mb-1 tracking-tight leading-none">
                     {skill.title}
                   </h6>
-                  <p className="text-[10px] text-slate-500 leading-tight line-clamp-2">
+                  <p className="text-[11px] text-slate-500 leading-tight line-clamp-2">
                     {skill.desc}
                   </p>
                 </div>
