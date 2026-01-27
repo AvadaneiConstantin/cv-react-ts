@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-300 font-sans selection:bg-cyan-400/30;
+  }
+}
+
+@layer utilities {
+  /* ... restul claselor tale ... */
+
+  /* 1. Definirea lățimii constante (NU se schimbă la hover, deci conținutul nu se mișcă) */
+  .custom-scroll::-webkit-scrollbar {
+    width: 10px; /* Destul de lată să o prinzi mereu */
+  }
+
+  /* 2. Track-ul (fundalul pe care merge scroll-ul) */
+  .custom-scroll::-webkit-scrollbar-track {
+    background: transparent; /* Rămâne invizibil pentru un look curat */
+  }
+
+  /* 3. Thumb-ul (partea de care tragi) */
+  .custom-scroll::-webkit-scrollbar-thumb {
+    /* TRUCUL: Folosim o bordură transparentă doar la stânga pentru a muta bara la dreapta */
+    /* Rezultatul: 12px total - 8px stânga invizibil = 4px vizibili lipiți de dreapta */
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box; /* Esențial: forțează culoarea să stea doar în interiorul bordurii */
+
+    @apply bg-slate-800 rounded-full;
+    transition: background-color 0.2s ease;
+  }
+
+  /* 4. Efectul de Hover (Se face mai lată vizual) */
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    border-left-width: 0px; /* Mai puțină bordură la stânga = mai lat vizibil */
+    /* Cyan-700 este mult mai profund */
+    @apply bg-cyan-700/60;
+    /* Glow-ul este acum foarte subtil, aproape imperceptibil */
+    box-shadow: 0 0 8px rgba(14, 116, 144, 0.3);
+  }
+
+  /* 5. Când este apăsată (Active) */
+  .custom-scroll::-webkit-scrollbar-thumb:active {
+    border-left-width: 0px; /* Se face aproape de lățimea maximă (10px vizibili) */
+    @apply bg-cyan-800;
+  }
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  background: transparent;
+}
+
+/* Animatie Ticker pentru Footer */
+@keyframes commit-scroll {
+  0%,
+  30% {
+    transform: translateY(0);
+  } /* Afiseaza PERFORMANCE */
+  33%,
+  63% {
+    transform: translateY(-33.33%);
+  } /* Afiseaza RESPONSIVENESS */
+  66%,
+  96% {
+    transform: translateY(-66.66%);
+  } /* Afiseaza SPEED */
+  100% {
+    transform: translateY(0);
+  } /* Revine la inceput */
+}
+
+/* animation for words on COMMIT_#...  */
+.animate-commit-ticker {
+  display: flex;
+  flex-direction: column;
+  animation: commit-scroll 15s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+}
+
+.ticker-wrapper {
+  height: 1.2em;
+  overflow: hidden;
+  line-height: 1.2em;
+}
+
+/* Adaugă în index.css sau în layer-ul de utilities */
+.bg-grid-pattern {
+  background-image: radial-gradient(
+    circle,
+    rgba(71, 85, 105, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 30px 30px; /* Ajustează densitatea grilei */
+}
