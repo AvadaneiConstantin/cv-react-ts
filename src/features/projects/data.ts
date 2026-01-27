@@ -432,7 +432,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     subtitle:
       "Professional CV with Dark Glass Morphism design and responsive layout",
     url: "https://cvdarkglass.netlify.app/",
-    pulseData: [35, 25, 20, 30, 50, 45, 70, 60, 65, 85],
+    pulseData: [35, 25, 40, 55, 50, 75, 65, 85, 70, 85],
     quote: "Design is not just what it looks like, design is how it works.",
     challenge:
       "Creating a professional CV with Dark Glass Morphism effects while maintaining readability and corporate polish.",
@@ -504,7 +504,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     title: "CV PDF Generator",
     subtitle: "Professional CV template with optimized print-to-PDF export",
     url: "https://cvpagepdf.netlify.app/",
-    pulseData: [25, 35, 30, 40, 35, 45, 50, 40, 45, 55],
+    pulseData: [45, 35, 40, 55, 80, 70, 75, 85, 90, 95],
     quote: "Documentation is the key to scalability.",
     challenge:
       "Creating a print-optimized CV template that maintains design integrity when exported to PDF.",

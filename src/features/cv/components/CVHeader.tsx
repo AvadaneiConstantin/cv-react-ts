@@ -13,7 +13,7 @@
  * - Clipboard copy with visual feedback
  */
 import profilePic from "/img/cv.png";
-import { ArrowUpRight, Linkedin, Mail, Copy, Check } from "lucide-react";
+import { ArrowUpRight, Copy, Check } from "lucide-react";
 import { useState } from "react";
 import { useIsMobile } from "../../../hooks/useMediaQuery";
 
@@ -48,7 +48,10 @@ export const CVHeader = () => {
       label: "LinkedIn",
       text: "My LinkedIn",
       action: () =>
-        window.open("https://linkedin.com/in/yourprofile", "_blank"),
+        window.open(
+          "https://www.linkedin.com/in/constantin-av%C4%83d%C4%83nei-4570ba2a6/",
+          "_blank",
+        ),
       showCopy: false,
     },
     {
