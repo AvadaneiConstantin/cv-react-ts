@@ -116,7 +116,7 @@ export const cvData: CVData = {
       id: "exp1",
       company: "React & TypeScript",
       position: "Frontend Developer",
-      period: "06/2022 — Present",
+      period: "06/2022 — 08/2025",
       location: "Iași, RO",
       description: [
         "Developed modular, reusable React components with TypeScript and UI libraries such as Material UI (MUI).",
