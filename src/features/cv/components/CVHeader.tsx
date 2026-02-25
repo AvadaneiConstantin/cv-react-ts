@@ -16,6 +16,7 @@ import profilePic from "/img/cv.png";
 import { ArrowUpRight, Copy, Check } from "lucide-react";
 import { useState } from "react";
 import { useIsMobile } from "../../../hooks/useMediaQuery";
+import { cvData } from "../data";
 
 export const CVHeader = () => {
   const [copiedItem, setCopiedItem] = useState<string | null>(null);
@@ -47,27 +48,24 @@ export const CVHeader = () => {
     {
       label: "LinkedIn",
       text: "My LinkedIn",
-      action: () =>
-        window.open(
-          "https://www.linkedin.com/in/constantin-av%C4%83d%C4%83nei-4570ba2a6/",
-          "_blank",
-        ),
+      action: () => window.open(cvData.profile.linkedin, "_blank"),
       showCopy: false,
     },
     {
       label: "Phone",
-      text: "0758 382 244",
-      action: () => (window.location.href = "tel:+40758382244"),
+      text: cvData.profile.phone || "",
+      action: () =>
+        (window.location.href = `tel:+${(cvData.profile.phone || "").replace(/\s/g, "")}`),
       showCopy: true,
-      copyText: "0758382244",
+      copyText: (cvData.profile.phone || "").replace(/\s/g, ""),
     },
     {
       label: "Email",
-      text: "avadanei.constantin85@gmail.com",
+      text: cvData.profile.email || "",
       action: () =>
-        (window.location.href = "mailto:avadanei.constantin85@gmail.com"),
+        (window.location.href = `mailto:${cvData.profile.email || ""}`),
       showCopy: true,
-      copyText: "avadanei.constantin85@gmail.com",
+      copyText: cvData.profile.email || "",
     },
   ];
 

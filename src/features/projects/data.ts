@@ -18,7 +18,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     version: "v1.3.0",
     status: "LIVE",
     title: "UI Components Showcase",
-    subtitle: "47 production-ready components with iframe-based isolation",
+    subtitle: "27 production-ready components with iframe-based isolation",
     url: "https://ui-components-showcase.netlify.app/",
     pulseData: [45, 50, 48, 85, 25, 48, 52, 95, 60, 80],
     quote: "Performance is not a goal; it’s a mindset.",
@@ -42,7 +42,7 @@ export const PROJECTS_DATA: ProjectData[] = [
 
     // Highlight-uri combinate si focusate pe "Engineering"
     cvHighlights: [
-      "Architected an **iframe-based rendering system** ensuring 100% CSS/JS isolation across 47 independent components.",
+      "Architected an **iframe-based rendering system** ensuring 100% CSS/JS isolation across 27 independent components.",
       "Implemented **cross-context theme synchronization** between parent app and sandboxed iframes using direct DOM manipulation.",
       "Achieved **95-100 Lighthouse scores** through zero-dependency architecture and CDN optimization.",
     ],

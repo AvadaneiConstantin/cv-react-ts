@@ -13,7 +13,7 @@ export const cvData: CVData = {
     title: "Frontend Developer",
     bio: "Frontend Developer with 3+ years of experience in React and TypeScript, delivering modular, high-performance interfaces aligned with modern UI/UX standards, mobile-first principles, and scalable component-driven architecture.",
     photo: "/img/cv.png",
-    email: "avadanei.constantin85@gmail.com",
+    email: "constantin.ava22@gmail.com",
     phone: "0758 382 244",
     location: "Iași, Romania",
     linkedin: "https://www.linkedin.com/in/constantin-avadanei",
