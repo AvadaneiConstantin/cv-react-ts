@@ -59,7 +59,7 @@ export const Shell = ({ children }: { children: React.ReactNode }) => {
                 <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_5px_#22d3ee]" />
                 <span className="terminal-text text-[11px] font-bold uppercase tracking-wider">
                   <span className="text-slate-500">
-                    SYSTEM_CORE // C_AVADANEI
+                    SYSTEM_CORE // CONSTANTIN_A.
                   </span>
                 </span>
               </div>

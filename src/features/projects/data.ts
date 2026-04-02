@@ -11,6 +11,90 @@ import type { ProjectData } from "./types";
 export const PROJECTS_DATA: ProjectData[] = [
   {
     id: "p1",
+    name: "HOVEN_AI",
+    description: "AI-powered hotel discovery engine with conversational search",
+    category: "web",
+    tech: "Next.js / Supabase / Gemini AI",
+    version: "v1.0.0",
+    status: "LIVE",
+    title: "Hôven - AI Hotel Finder",
+    subtitle: "Conversational hotel search with AI-powered recommendations",
+    url: "https://hoven-ai.vercel.app/",
+    pulseData: [60, 75, 55, 90, 70, 85, 65, 95, 80, 90],
+
+    quote:
+      "Search is evolving from filters to conversations — this is the Next(js) step.",
+
+    challenge:
+      " Business part: when users request hotel recommendations, AI suggests partner hotels from the database.",
+    metrics: [
+      { label: "Hotels", value: 50, unit: "+" },
+      { label: "Countries", value: 10, unit: "" },
+      { label: "Search Modes", value: 2, unit: "" },
+      { label: "Bundle Size", value: 48, unit: "kb" },
+    ],
+
+    stack: [
+      "Next.js 15 App Router",
+      "TypeScript",
+      "Supabase PostgreSQL",
+      "Vercel AI SDK",
+      "Google Gemini 2.5 Flash",
+      "Tailwind CSS",
+    ],
+
+    cvHighlights: [
+      "Built **hybrid search** combining Supabase filters with Gemini AI conversational queries.",
+      "Used **Next.js Server Components** - only 48kb client JS, rest server-rendered.",
+      "Users can **chat in any language**, and AI responds with hotel recommendations from database.",
+      "**Smart fallback** - when user requests hotels from countries not in DB (e.g., Finland), AI recommends similar hotels from available countries (Spain, Greece, Italy).",
+      "Optimized images with **Next.js Image** - priority loading + responsive sizing.",
+    ],
+
+    technicalDecisions: [
+      {
+        challenge: "Balancing filters with AI search",
+        solution: "Supabase queries + AI recommendations",
+        outcome: "Flexible search - precise or natural language",
+      },
+      {
+        challenge: "Large hotel lists performance",
+        solution: "Server Components + isolated client logic",
+        outcome: "48kb bundle, fast initial render",
+      },
+      {
+        challenge: "Multi-language support + missing data",
+        solution: "AI prompt engineering with fallback recommendations",
+        outcome:
+          "Chat in any language, AI suggests alternatives when exact match missing",
+      },
+      {
+        challenge: "Fast loading & responsive images with Next.js",
+        solution: "Next.js Image optimization",
+        outcome: "Fast loading + responsive images",
+      },
+    ],
+
+    previewImages: [
+      {
+        src: "/img/projDetails/hoven2.png",
+        alt: "Hotel Grid",
+        label: "HOTEL_GRID",
+      },
+      {
+        src: "/img/projDetails/hoven1.webp",
+        alt: "AI Finder",
+        label: "AI_CHAT",
+      },
+      {
+        src: "/img/projDetails/hoven3.webp",
+        alt: "Fallback",
+        label: "When no credits",
+      },
+    ],
+  },
+  {
+    id: "p2",
     name: "UI_COMPONENTS",
     description: "Advanced UI component library with iframe sandboxing",
     category: "tool",
@@ -93,7 +177,7 @@ export const PROJECTS_DATA: ProjectData[] = [
   },
 
   {
-    id: "p2",
+    id: "p3",
     name: "MATE_FIX",
     description:
       "Educational platform with lazy loading and enterprise error handling",
@@ -173,7 +257,7 @@ export const PROJECTS_DATA: ProjectData[] = [
   },
 
   {
-    id: "p3",
+    id: "p4",
     name: "SPEAKERS_HUB",
     description:
       "Premium e-commerce platform with video hero and glassmorphism UI",
@@ -254,7 +338,7 @@ export const PROJECTS_DATA: ProjectData[] = [
   },
 
   {
-    id: "p4",
+    id: "p5",
     name: "Space_Discovery",
     description: "Interactive 3D solar system with WebGL rendering",
     category: "web",
@@ -335,7 +419,7 @@ export const PROJECTS_DATA: ProjectData[] = [
   },
 
   {
-    id: "p5",
+    id: "p6",
     name: "Urban_Food",
     description:
       "Food service management platform with analytics and customer management",
@@ -421,7 +505,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     ],
   },
   {
-    id: "p6",
+    id: "p7",
     name: "CV_DARK_GLASS",
     description: "Modern CV with Dark Glass Morphism design system",
     category: "web",
@@ -494,7 +578,7 @@ export const PROJECTS_DATA: ProjectData[] = [
   },
 
   {
-    id: "p7",
+    id: "p8",
     name: "CV_PDF",
     description: "Professional CV template with print-to-PDF functionality",
     category: "tool",
