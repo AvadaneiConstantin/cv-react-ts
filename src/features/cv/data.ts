@@ -115,7 +115,7 @@ export const cvData: CVData = {
     {
       id: "exp1",
       company: "React & TypeScript",
-      position: "Frontend Developer",
+      position: "Frontend Developer @ Mendelio",
       period: "06/2022 — 08/2025",
       location: "Iași, RO",
       description: [
